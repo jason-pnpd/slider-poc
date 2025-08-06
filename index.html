@@ -14,12 +14,23 @@
         .slider_container {
             width: 100%;
             overflow-x: scroll;
-            scrollbar-width: none;    
+            scrollbar-width: none;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             gap: 20px;
             scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slider_container_two {
+            width: 100%;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 20px;
         }
 
         .slider_item {
@@ -39,69 +50,258 @@
 </head>
 
 <body>
-    <h1>Page Title</h1>
+    <h1>Slider PoC</h1>
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et nisl tempor, fringilla ligula eu, consectetur quam. Vestibulum non blandit lacus. Praesent nunc est, vestibulum tempor augue vel, tristique lacinia mi. Phasellus sed magna nunc. Quisque eu sem nec nibh facilisis ornare et ut ex. Nunc ac viverra justo, at viverra massa. Pellentesque tempus auctor ligula eu rutrum.</p>
 
         <p>Phasellus tristique eleifend turpis, a sagittis dolor commodo a. Nam non urna nec ligula vehicula luctus sed et lorem. Duis semper augue a nibh faucibus maximus. Integer condimentum, lacus a pellentesque ornare, tellus odio fermentum mauris, viverra aliquet elit libero sit amet velit. Phasellus at ante in erat pretium efficitur in vel ligula. Maecenas porta, lectus eu rutrum tincidunt, risus quam sodales lacus, et semper nisi magna et nisi. Ut ac imperdiet enim, eget mollis tortor. Vestibulum feugiat ante quis fermentum tincidunt. Vestibulum sodales, orci convallis bibendum porta, nunc ipsum posuere arcu, mattis vehicula velit odio vitae nisi. Pellentesque consequat aliquet augue, non auctor risus mattis ac. In vitae metus aliquet sem tristique maximus id vitae risus.</p>
     </div>
+    <h3>Snapping Slides</h3>
     <div class="slider_container">
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum/400/200" />
+            <img src="https://picsum.photos/seed/picsum/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum1/400/200" />
+            <img src="https://picsum.photos/seed/picsum1/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum2/400/200" />
+            <img src="https://picsum.photos/seed/picsum2/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum3/400/200" />
+            <img src="https://picsum.photos/seed/picsum3/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum4/400/200" />
+            <img src="https://picsum.photos/seed/picsum4/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum/400/200" />
+            <img src="https://picsum.photos/seed/picsum5/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum1/400/200" />
+            <img src="https://picsum.photos/seed/picsum6/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum2/400/200" />
+            <img src="https://picsum.photos/seed/picsum7/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum3/400/200" />
+            <img src="https://picsum.photos/seed/picsum8/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
         </div>
         <div class="slider_item">
-            <img src="https://picsum.photos/seed/picsum4/400/200" />
+            <img src="https://picsum.photos/seed/picsum9/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum1/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum2/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum3/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum4/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum5/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum6/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum7/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum8/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum9/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et nisl tempor, fringilla ligula eu, consectetur quam. Vestibulum non blandit lacus. Praesent nunc est, vestibulum tempor augue vel, tristique lacinia mi. Phasellus sed magna nunc. Quisque eu sem nec nibh facilisis ornare et ut ex. Nunc ac viverra justo, at viverra massa. Pellentesque tempus auctor ligula eu rutrum.</p>
+
+        <p>Phasellus tristique eleifend turpis, a sagittis dolor commodo a. Nam non urna nec ligula vehicula luctus sed et lorem. Duis semper augue a nibh faucibus maximus. Integer condimentum, lacus a pellentesque ornare, tellus odio fermentum mauris, viverra aliquet elit libero sit amet velit. Phasellus at ante in erat pretium efficitur in vel ligula. Maecenas porta, lectus eu rutrum tincidunt, risus quam sodales lacus, et semper nisi magna et nisi. Ut ac imperdiet enim, eget mollis tortor. Vestibulum feugiat ante quis fermentum tincidunt. Vestibulum sodales, orci convallis bibendum porta, nunc ipsum posuere arcu, mattis vehicula velit odio vitae nisi. Pellentesque consequat aliquet augue, non auctor risus mattis ac. In vitae metus aliquet sem tristique maximus id vitae risus.</p>
+    </div>
+    <h3>Smooth drag slides</h3>
+    <div class="slider_container_two">
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum1/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum2/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum3/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum4/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum5/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum6/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum7/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum8/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum9/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum1/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum2/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum3/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum4/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum5/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum6/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum7/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum8/400/550" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum9/400/550" />
             <div>
                 Lorem ipsum dolor sit amet
             </div>
@@ -129,5 +329,68 @@
         <p>Vivamus et erat vitae lacus lacinia imperdiet nec sit amet ante. Nulla tempus dictum condimentum. Etiam et posuere sem, at ornare tortor. Nullam scelerisque lectus sit amet sem porta, id convallis urna euismod. Vestibulum sit amet risus finibus, pellentesque dolor ut, pretium urna. Aliquam congue justo luctus mauris aliquam commodo. Proin elementum tempus consectetur. Quisque sem est, iaculis vel viverra a, volutpat vitae erat. Duis risus purus, tempor vitae lectus semper, scelerisque rutrum arcu. Mauris fringilla, eros eget feugiat dapibus, justo sapien porta sem, sed suscipit dui tortor in nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor lorem posuere lectus commodo, at consequat tortor facilisis. Sed scelerisque bibendum feugiat.</p>
     </div>
 </body>
+<script>
+    let mouseDown = false;
+    let startX, scrollLeft;
+    const slider = document.querySelector('.slider_container');
 
+    const startDragging = (e) => {
+        e.preventDefault();
+        mouseDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    }
+
+    const stopDragging = (e) => {
+        e.preventDefault();
+        mouseDown = false;
+    }
+
+    const move = (e) => {
+        e.preventDefault();
+        if(!mouseDown) { return; }
+        const x = e.pageX - slider.offsetLeft;
+        const scroll = x - startX;
+        slider.scrollLeft = scrollLeft - scroll;
+    }
+
+    // Add the event listeners
+    slider.addEventListener('mousemove', move, false);
+    slider.addEventListener('mousedown', startDragging, false);
+    slider.addEventListener('mouseup', stopDragging, false);
+    slider.addEventListener('mouseleave', stopDragging, false);
+
+
+
+    let mouseDown2 = false;
+    let startX2, scrollLeft2;
+    const slider2 = document.querySelector('.slider_container_two');
+
+    const startDragging2 = (e) => {
+        e.preventDefault();
+        mouseDown2 = true;
+        startX2 = e.pageX - slider2.offsetLeft;
+        scrollLeft2 = slider2.scrollLeft;
+    }
+
+    const stopDragging2 = (e) => {
+        e.preventDefault();
+        mouseDown2 = false;
+    }
+
+    const move2 = (e) => {
+        e.preventDefault();
+        if(!mouseDown2) { return; }
+        const x = e.pageX - slider2.offsetLeft;
+        const scroll2 = x - startX2;
+        slider2.scrollLeft = scrollLeft2 - scroll2;
+    }
+
+    // Add the event listeners
+    slider2.addEventListener('mousemove', move2, false);
+    slider2.addEventListener('mousedown', startDragging2, false);
+    slider2.addEventListener('mouseup', stopDragging2, false);
+    slider2.addEventListener('mouseleave', stopDragging2, false);
+
+</script>
 </html>
