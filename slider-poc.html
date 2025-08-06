@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slider PoC</title>
+  <style>
+        :root {
+            font-family: sans-serif;
+            background-color: #dfdfdf;
+        }
+
+        .slider_container {
+            width: 100%;
+            overflow-x: scroll;
+            scrollbar-width: none;    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .slider_item {
+            width: 400px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            flex-shrink: 0;
+            flex-grow: 0;
+            scroll-snap-align: start;
+        }
+
+        .slider_item div {
+            padding: 10px;
+        }
+  </style>
+</head>
+
+<body>
+    <h1>Page Title</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et nisl tempor, fringilla ligula eu, consectetur quam. Vestibulum non blandit lacus. Praesent nunc est, vestibulum tempor augue vel, tristique lacinia mi. Phasellus sed magna nunc. Quisque eu sem nec nibh facilisis ornare et ut ex. Nunc ac viverra justo, at viverra massa. Pellentesque tempus auctor ligula eu rutrum.</p>
+
+        <p>Phasellus tristique eleifend turpis, a sagittis dolor commodo a. Nam non urna nec ligula vehicula luctus sed et lorem. Duis semper augue a nibh faucibus maximus. Integer condimentum, lacus a pellentesque ornare, tellus odio fermentum mauris, viverra aliquet elit libero sit amet velit. Phasellus at ante in erat pretium efficitur in vel ligula. Maecenas porta, lectus eu rutrum tincidunt, risus quam sodales lacus, et semper nisi magna et nisi. Ut ac imperdiet enim, eget mollis tortor. Vestibulum feugiat ante quis fermentum tincidunt. Vestibulum sodales, orci convallis bibendum porta, nunc ipsum posuere arcu, mattis vehicula velit odio vitae nisi. Pellentesque consequat aliquet augue, non auctor risus mattis ac. In vitae metus aliquet sem tristique maximus id vitae risus.</p>
+    </div>
+    <div class="slider_container">
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum1/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum2/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum3/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum4/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum1/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum2/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum3/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+        <div class="slider_item">
+            <img src="https://picsum.photos/seed/picsum4/400/200" />
+            <div>
+                Lorem ipsum dolor sit amet
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et nisl tempor, fringilla ligula eu, consectetur quam. Vestibulum non blandit lacus. Praesent nunc est, vestibulum tempor augue vel, tristique lacinia mi. Phasellus sed magna nunc. Quisque eu sem nec nibh facilisis ornare et ut ex. Nunc ac viverra justo, at viverra massa. Pellentesque tempus auctor ligula eu rutrum.</p>
+
+        <p>Phasellus tristique eleifend turpis, a sagittis dolor commodo a. Nam non urna nec ligula vehicula luctus sed et lorem. Duis semper augue a nibh faucibus maximus. Integer condimentum, lacus a pellentesque ornare, tellus odio fermentum mauris, viverra aliquet elit libero sit amet velit. Phasellus at ante in erat pretium efficitur in vel ligula. Maecenas porta, lectus eu rutrum tincidunt, risus quam sodales lacus, et semper nisi magna et nisi. Ut ac imperdiet enim, eget mollis tortor. Vestibulum feugiat ante quis fermentum tincidunt. Vestibulum sodales, orci convallis bibendum porta, nunc ipsum posuere arcu, mattis vehicula velit odio vitae nisi. Pellentesque consequat aliquet augue, non auctor risus mattis ac. In vitae metus aliquet sem tristique maximus id vitae risus.</p>
+
+        <p>Cras ut augue neque. Quisque efficitur nisl a magna ultricies maximus. Aenean efficitur orci quis ex suscipit, non tincidunt lorem tincidunt. Integer in elementum mi. Curabitur vestibulum tempus posuere. Maecenas finibus suscipit orci, at euismod leo blandit vitae. Morbi eu ipsum massa. Mauris pellentesque congue pellentesque. Vestibulum dignissim quis lacus eu sodales. Integer sit amet lorem sed enim bibendum consequat. Fusce eu bibendum nisl. Nam semper eros et ullamcorper mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tempus aliquet nunc.</p>
+
+        <p>Donec sodales orci sit amet placerat fringilla. In nisl purus, commodo eget leo a, aliquam consectetur risus. Etiam tristique, ipsum sit amet imperdiet fringilla, arcu lorem accumsan nibh, vitae tincidunt felis nunc vel mi. Nulla tristique porta mi, non interdum lectus pellentesque eget. Nulla et turpis viverra, pretium turpis ut, luctus mauris. Suspendisse auctor purus vel arcu faucibus posuere. Vestibulum ligula lorem, mattis non sodales ac, tincidunt laoreet nibh. Aenean placerat pellentesque congue. Fusce sagittis pharetra viverra. In scelerisque urna et sodales pulvinar. Nam interdum egestas justo, ac malesuada nisl luctus ut.</p>
+
+        <p>Donec quis nulla pulvinar, facilisis libero at, pellentesque libero. Praesent luctus aliquet feugiat. Integer dictum arcu in volutpat bibendum. Nulla malesuada mauris eu neque lobortis, vel iaculis mi consequat. Aliquam sed pellentesque quam. Sed a neque porttitor, fringilla neque nec, tincidunt nunc. Aliquam eu tempor nunc, ullamcorper blandit purus.</p>
+
+        <p>Vivamus et erat vitae lacus lacinia imperdiet nec sit amet ante. Nulla tempus dictum condimentum. Etiam et posuere sem, at ornare tortor. Nullam scelerisque lectus sit amet sem porta, id convallis urna euismod. Vestibulum sit amet risus finibus, pellentesque dolor ut, pretium urna. Aliquam congue justo luctus mauris aliquam commodo. Proin elementum tempus consectetur. Quisque sem est, iaculis vel viverra a, volutpat vitae erat. Duis risus purus, tempor vitae lectus semper, scelerisque rutrum arcu. Mauris fringilla, eros eget feugiat dapibus, justo sapien porta sem, sed suscipit dui tortor in nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor lorem posuere lectus commodo, at consequat tortor facilisis. Sed scelerisque bibendum feugiat.</p>
+
+        <p>Cras ut augue neque. Quisque efficitur nisl a magna ultricies maximus. Aenean efficitur orci quis ex suscipit, non tincidunt lorem tincidunt. Integer in elementum mi. Curabitur vestibulum tempus posuere. Maecenas finibus suscipit orci, at euismod leo blandit vitae. Morbi eu ipsum massa. Mauris pellentesque congue pellentesque. Vestibulum dignissim quis lacus eu sodales. Integer sit amet lorem sed enim bibendum consequat. Fusce eu bibendum nisl. Nam semper eros et ullamcorper mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tempus aliquet nunc.</p>
+
+        <p>Donec sodales orci sit amet placerat fringilla. In nisl purus, commodo eget leo a, aliquam consectetur risus. Etiam tristique, ipsum sit amet imperdiet fringilla, arcu lorem accumsan nibh, vitae tincidunt felis nunc vel mi. Nulla tristique porta mi, non interdum lectus pellentesque eget. Nulla et turpis viverra, pretium turpis ut, luctus mauris. Suspendisse auctor purus vel arcu faucibus posuere. Vestibulum ligula lorem, mattis non sodales ac, tincidunt laoreet nibh. Aenean placerat pellentesque congue. Fusce sagittis pharetra viverra. In scelerisque urna et sodales pulvinar. Nam interdum egestas justo, ac malesuada nisl luctus ut.</p>
+
+        <p>Donec quis nulla pulvinar, facilisis libero at, pellentesque libero. Praesent luctus aliquet feugiat. Integer dictum arcu in volutpat bibendum. Nulla malesuada mauris eu neque lobortis, vel iaculis mi consequat. Aliquam sed pellentesque quam. Sed a neque porttitor, fringilla neque nec, tincidunt nunc. Aliquam eu tempor nunc, ullamcorper blandit purus.</p>
+
+        <p>Vivamus et erat vitae lacus lacinia imperdiet nec sit amet ante. Nulla tempus dictum condimentum. Etiam et posuere sem, at ornare tortor. Nullam scelerisque lectus sit amet sem porta, id convallis urna euismod. Vestibulum sit amet risus finibus, pellentesque dolor ut, pretium urna. Aliquam congue justo luctus mauris aliquam commodo. Proin elementum tempus consectetur. Quisque sem est, iaculis vel viverra a, volutpat vitae erat. Duis risus purus, tempor vitae lectus semper, scelerisque rutrum arcu. Mauris fringilla, eros eget feugiat dapibus, justo sapien porta sem, sed suscipit dui tortor in nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor lorem posuere lectus commodo, at consequat tortor facilisis. Sed scelerisque bibendum feugiat.</p>
+    </div>
+</body>
+
+</html>
